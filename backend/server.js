@@ -11,10 +11,6 @@ const users = [
     {id: 1, username: 'user', password: 'user'}
 ];
 
-app.listen(port, () => {
-    console.log('Server running at http://localhost:' + port);
-})
-
 app.use(bodyParser.json());
 app.use(cors());
 
@@ -26,9 +22,15 @@ app.post('/login', (req, res) => {
     let user = users.find((u) => u.username === username && u.password === password );
     if (user) {
         // generate jwt token
-        const token = jwt.sign({ userId: user.id }, 'secret_ket', { expiresIn: '1h' });
+        const token = jwt.sign({ userId: user.id }, 'secret_key', { expiresIn: '1h' });
         res.status(200).send({ success: true, token: token})
     } else {
         res.status(401).send({ success: false, message: 'Invalid username or password'})
     }
 });
+
+app.listen(port, () => {
+    console.log('Server running at http://localhost:' + port);
+})
+
+module.exports = app;
