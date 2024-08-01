@@ -26,7 +26,7 @@ A simple Angular application simulating a login.
 ### Run the Application
 1. Start the backend server: Navigate to the backend directory and run `npm start`.
 2. Start the frontend server: Navigate to the frontend directory and run `npm start`.
-3. Open your web browser and go to [http://localhost:4200/](http://localhost:4200/).
+3. Open your web browser and go to http://localhost:4200/.
 
 ## Technologies Used
 - Angular: Frontend framework for building interactive web applications.
