@@ -34,6 +34,7 @@ A simple Angular application simulating a login.
 - Express: A web framework for Node.js that simplifies the creation of web applications.
 
 ## Contact Information
-Your Name
+Chiara Zuffi
 - Email: chiara.zuffi19@gmail.com
-- GitHub: [https://github.com/chiarazetaa/](https://github.com/chiarazetaa/)
+- GitHub: https://github.com/chiarazetaa
+- LinkedIn: https://www.linkedin.com/in/zuffichiara/
